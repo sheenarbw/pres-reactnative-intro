@@ -1,49 +1,370 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>Getting Started with ReactNative...or not</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
 
-		<script src="js/reveal.js"></script>
+    <script
+      type="text/javascript"
+      src="https://ssl.gstatic.com/trends_nrtr/1937_RC01/embed_loader.js"
+    ></script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Getting started with React Native</h1>
+          <img src="images/react-native2.png" height="200" />
+          <h3>...or not</h3>
+        </section>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
+        <section>
+          <h2>I needed a mobile app</h2>
+          <ul>
+            <li class="fragment">
+              Needed my app to "wake up" like an alarm clock
+            </li>
+            <li>=> Required Native functionality (Android AlarmManager)</li>
+            <li>React + Redux + Sagas = fun fun fun</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>But...what is it?</h2>
+          <ul>
+            <li>
+              Learn-once run anywhere
+            </li>
+            <li>initial release: March 26, 2015</li>
+            <li>stable release: 0.61.1 September 25, 2019</li>
+            <li>Created by The Facebook</li>
+            <li>Native visual layer</li>
+            <li>Executes Js, Js calls native</li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <h2>Choices Choices...</h2>
+            TODO:image
+          </section>
+
+          <section>
+            <h2>ReactNative versus...just native</h2>
+            <ul>
+              <li>Kotlin/Java</li>
+              <li>Swift/iOS</li>
+              <li>Fastest runtime</li>
+              <li>Slowest devtime</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>ReactNative versus Flutter</h2>
+            <ul>
+              <li>Dash</li>
+              <li>Well loved</li>
+              <li>Made by Google</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>ReactNative versus Xamerin</h2>
+            <ul>
+              <li>C#</li>
+              <li>Microsoft</li>
+              <li>Compiled ahead of itme</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>ReactNative versus PWAs</h2>
+            Walks like an app - quacks like an app - BUT it's a website
+          </section>
+
+          <section>
+            <h2>ReactNative versus Ionic</h2>
+            <ul>
+              <li>Angular</li>
+              <li>WebViews are slow</li>
+              <li>Cordova</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h2>Actually getting started</h2>
+          <ul>
+            <li>Expo demo</li>
+            <li>react-native-cli</li>
+          </ul>
+
+          <a href="todo">Getting Started Docs</a>
+        </section>
+
+        <section>
+          <h2>Cons...</h2>
+          <ul>
+            <li>
+              Expo is slooow (but wouldn't work for my use case anyway I think)
+            </li>
+            <li>react-native-cli: Android studio was a mission to set up</li>
+            <li>Error messages were pretty unclear</li>
+            <li>Missed chrome dev tools a lot</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Twist!</h1>
+          <h3 class="fragment">Ionic got a re-re-re-remix</h3>
+        </section>
+
+        <section>
+          <h2>
+            Ionic4 ===
+            <a
+              href="https://blog.ionicframework.com/introducing-ionic-4-ionic-for-everyone/"
+            >
+              Ionic for everyone
+            </a>
+          </h2>
+          <ul>
+            <li>Modern web standards => Angular/React/Vue/Js</li>
+            <li>Runs in a browser</li>
+            <li>Small files: 6.12 MB (iconic) vs 47 MB (RN)</li>
+            <li>Capacitor instead of Cordova</li>
+          </ul>
+        </section>
+
+        <section>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Native</th>
+                <th>Hybrid-Native</th>
+                <th>Hybrid-Web</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Examples</b></td>
+                <td>iOS and Android SDKs</td>
+                <td>React Native, Xamarin, NativeScript, Flutter</td>
+                <td>Ionic</td>
+              </tr>
+              <tr>
+                <td><b>Languages</b></td>
+                <td>Obj-C, Swift, Java</td>
+                <td>JS + Custom UI Language / Interpreter</td>
+                <td>HTML + CSS + JS</td>
+              </tr>
+              <tr>
+                <td><b>Code Reuse</b></td>
+                <td>Totally Separate Code Bases per Platform</td>
+                <td>Shared Business Logic with Different UI Codebases</td>
+                <td>One codebase, UI codebase stays the same</td>
+              </tr>
+              <tr>
+                <td><b>Target Platforms</b></td>
+                <td>iOS &amp; Android Native Mobile Apps</td>
+                <td>iOS &amp; Android Native Mobile Apps</td>
+                <td>
+                  iOS, Android, Electron, Mobile and Desktop Browsers as a
+                  Progressive Web App, and anywhere else the web runs
+                </td>
+              </tr>
+              <tr>
+                <td><b>Investment</b></td>
+                <td>Largest investment in staff and time</td>
+                <td>Medium investment in staff and time</td>
+                <td>Lowest investment in staff and time</td>
+              </tr>
+              <tr>
+                <td><b>UI Elements</b></td>
+                <td>Native UI independent to each platform</td>
+                <td>
+                  A selection of Native UI elements for iOS and Android UI
+                  elements are specific to the target platform and not shared<br />
+                  <br />
+                  Custom UI elements begin to require split UI code bases
+                </td>
+                <td>
+                  Web UI elements that are shared across any platform,
+                  conforming to the native look &amp; feel of wherever they are
+                  deployed<br />
+                  <br />
+                  Easily use completely custom UI elements
+                </td>
+              </tr>
+              <tr>
+                <td><b>API Access / Native Features</b></td>
+                <td>Separate Native API &amp; Codebases for each App</td>
+                <td>
+                  Abstracted Single-Codebase Native Access through Plugins (with
+                  ability to write custom Plugins)
+                </td>
+                <td>
+                  Abstracted Single-Codebase Native Access through Plugins (with
+                  ability to write custom Plugins)
+                </td>
+              </tr>
+              <tr>
+                <td><b>Offline Access</b></td>
+                <td>Works</td>
+                <td>Works</td>
+                <td>Works</td>
+              </tr>
+              <tr>
+                <td><b>Performance</b></td>
+                <td>“Native Performance” with well written code.</td>
+                <td>
+                  Indistinguishable difference on modern devices with well
+                  written code. See above.
+                </td>
+                <td>
+                  Indistinguishable difference on modern devices with well
+                  written code. See above.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <script type="text/javascript">
+            trends.embed.renderExploreWidget(
+              "TIMESERIES",
+              {
+                comparisonItem: [
+                  { keyword: "/g/1q6l_n0n0", geo: "US", time: "today 12-m" },
+                  { keyword: "ReactNative", geo: "US", time: "today 12-m" }
+                ],
+                category: 0,
+                property: ""
+              },
+              {
+                exploreQuery:
+                  "geo=US&q=%2Fg%2F1q6l_n0n0,ReactNative&date=today 12-m,today 12-m",
+                guestPath: "https://trends.google.com:443/trends/embed/"
+              }
+            );
+          </script>
+        </section>
+
+        <section>
+          <script type="text/javascript">
+            trends.embed.renderExploreWidget(
+              "TIMESERIES",
+              {
+                comparisonItem: [
+                  { keyword: "/m/012l1vxv", geo: "US", time: "today 12-m" },
+                  { keyword: "/g/1q6l_n0n0", geo: "US", time: "today 12-m" },
+                  { keyword: "/g/11c6w0ddw9", geo: "US", time: "today 12-m" },
+                  { keyword: "ReactNative", geo: "US", time: "today 12-m" },
+                  { keyword: "Vue", geo: "US", time: "today 12-m" }
+                ],
+                category: 0,
+                property: ""
+              },
+              {
+                exploreQuery:
+                  "geo=US&q=%2Fm%2F012l1vxv,%2Fg%2F1q6l_n0n0,%2Fg%2F11c6w0ddw9,ReactNative,Vue&date=today 12-m,today 12-m,today 12-m,today 12-m,today 12-m",
+                guestPath: "https://trends.google.com:443/trends/embed/"
+              }
+            );
+          </script>
+        </section>
+
+        <section>
+          <h2>
+            Learning Path + Resources!
+          </h2>
+          <ul>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                >HTML</a
+              >
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+              >
+                JS
+              </a>
+            </li>
+            <li>
+              <a href="https://reactjs.org/tutorial/tutorial.html">React</a>
+            </li>
+            <li>
+              <a href="https://ionicframework.com/docs/react/overview"
+                >Iconc4-React overview</a
+              >
+            </li>
+            <li>Optional: Java/Kotlin/Swift</li>
+            <li>
+              Optional:
+              <a href="https://redux.js.org/introduction/getting-started"
+                >Redux</a
+              >
+            </li>
+            <li>
+              Optional:
+              <a
+                href="https://redux-saga.js.org/docs/introduction/BeginnerTutorial.html"
+                >Redux Sagas</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          { src: "plugin/highlight/highlight.js", async: true }
+        ]
+      });
+
+      document.getElementById("trends-widget-1").height = "400em";
+      document.getElementById("trends-widget-1").width = "800em";
+      document.getElementById("trends-widget-2").height = "400em";
+      document.getElementById("trends-widget-2").width = "800em";
+    </script>
+  </body>
 </html>
