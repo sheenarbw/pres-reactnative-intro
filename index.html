@@ -11,7 +11,16 @@
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/reveal.css" />
-    <link rel="stylesheet" href="css/theme/black.css" />
+
+    <link rel="stylesheet" href="css/theme/sky.css" />
+    <!-- 
+        <link rel="stylesheet" href="css/theme/night.css" />
+        <link rel="stylesheet" href="css/theme/black.css" />
+        <link rel="stylesheet" href="css/theme/moon.css" />
+        <link rel="stylesheet" href="css/theme/league.css" />
+        <link rel="stylesheet" href="css/theme/blood.css" />
+    <link rel="stylesheet" href="css/theme/solarized.css" /> 
+-->
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/monokai.css" />
@@ -36,108 +45,139 @@
     <div class="reveal">
       <div class="slides">
         <section>
-          <h1>Getting started with React Native</h1>
+          <h2>Getting started with React Native</h2>
           <img src="images/react-native2.png" height="200" />
           <h3>...or not</h3>
         </section>
 
         <section>
-          <h2>I needed a mobile app</h2>
+          <h2>Once upon a time, <br />I needed a mobile app</h2>
           <ul>
             <li class="fragment">
               Needed my app to "wake up" like an alarm clock
             </li>
-            <li>=> Required Native functionality (Android AlarmManager)</li>
-            <li>React + Redux + Sagas = fun fun fun</li>
+            <li class="fragment">
+              => Required Native functionality (Android AlarmManager)
+            </li>
+            <li class="fragment">React + Redux + Sagas = fun fun fun</li>
           </ul>
         </section>
 
         <section>
-          <h2>But...what is it?</h2>
-          <ul>
-            <li>
-              Learn-once run anywhere
-            </li>
-            <li>initial release: March 26, 2015</li>
-            <li>stable release: 0.61.1 September 25, 2019</li>
-            <li>Created by The Facebook</li>
-            <li>Native visual layer</li>
-            <li>Executes Js, Js calls native</li>
-          </ul>
+          <h2>What is ReactNative?</h2>
+          <section>
+            <img src="images/mobile-choices2.png" height="400" />
+          </section>
+          <section>
+            <ul>
+              <li>
+                Learn-once run anywhere
+              </li>
+              <li class="fragment">Native visual layer</li>
+              <li class="fragment">Executes Js, Js calls native</li>
+              <li class="fragment">Created by The Facebook</li>
+              <li class="fragment">initial release: March 26, 2015</li>
+              <li class="fragment">
+                stable release: 0.61.1 September 25, 2019
+              </li>
+            </ul>
+          </section>
         </section>
 
         <section>
           <section>
-            <h2>Choices Choices...</h2>
-            TODO:image
+            <h2>ReactNative versus...</h2>
           </section>
 
           <section>
             <h2>ReactNative versus...just native</h2>
-            <ul>
-              <li>Kotlin/Java</li>
-              <li>Swift/iOS</li>
-              <li>Fastest runtime</li>
-              <li>Slowest devtime</li>
-            </ul>
+
+            <img src="images/native.png" height="250" />
+
+            <p>
+              Android: Kotlin/Java - Apple: Swift/iOS - Fastest runtime -
+              Slowest devtime
+            </p>
           </section>
 
           <section>
             <h2>ReactNative versus Flutter</h2>
-            <ul>
-              <li>Dash</li>
-              <li>Well loved</li>
-              <li>Made by Google</li>
-            </ul>
+            <img src="images/flutter.jpg" height="250" />
+
+            <p>
+              Language: Dash - Cross platform - Well loved - Made by Google
+            </p>
           </section>
 
           <section>
             <h2>ReactNative versus Xamerin</h2>
-            <ul>
-              <li>C#</li>
-              <li>Microsoft</li>
-              <li>Compiled ahead of itme</li>
-            </ul>
+            <img src="images/xamarin.png" height="250" />
+            <p>
+              Language: C# - Cross platform - Microsoft - Compiled
+            </p>
           </section>
 
           <section>
             <h2>ReactNative versus PWAs</h2>
-            Walks like an app - quacks like an app - BUT it's a website
+            <img src="images/pwa.png" height="250" />
+            <p>
+              Walks like an app - quacks like an app - BUT it's a website
+            </p>
           </section>
 
           <section>
             <h2>ReactNative versus Ionic</h2>
-            <ul>
-              <li>Angular</li>
-              <li>WebViews are slow</li>
-              <li>Cordova</li>
-            </ul>
+
+            <img src="images/ionic.jpg" height="250" />
+            <p>
+              Angular - WebViews are slow - Cordova
+            </p>
           </section>
         </section>
 
         <section>
-          <h2>Actually getting started</h2>
-          <ul>
-            <li>Expo demo</li>
-            <li>react-native-cli</li>
-          </ul>
+          <h2>
+            Actually
+            <a
+              href="https://facebook.github.io/react-native/docs/getting-started"
+              >getting started</a
+            >
+          </h2>
+          <section>
+            <ul>
+              <li>Expo</li>
+              <li>react-native-cli</li>
+            </ul>
+          </section>
 
-          <a href="todo">Getting Started Docs</a>
+          <section>
+            <pre><code class="hljs bash">
+npm install -g expo-cli
+
+expo init expoProject
+cd expoProject
+npm start
+            </code></pre>
+          </section>
         </section>
 
         <section>
           <h2>Cons...</h2>
           <ul>
-            <li>
+            <li class="fragment">
               Expo is slooow (but wouldn't work for my use case anyway I think)
             </li>
-            <li>react-native-cli: Android studio was a mission to set up</li>
-            <li>Error messages were pretty unclear</li>
-            <li>Missed chrome dev tools a lot</li>
+            <li class="fragment">
+              react-native-cli: Android studio was a mission to set up
+            </li>
+            <li class="fragment">Error messages were pretty unclear</li>
+            <li class="fragment">Missed chrome dev tools a lot</li>
+            <li class="fragment">Need a device or emulator</li>
           </ul>
         </section>
 
         <section>
+          <h3>And then came LinuxConf</h3>
           <h1>Twist!</h1>
           <h3 class="fragment">Ionic got a re-re-re-remix</h3>
         </section>
@@ -152,151 +192,93 @@
             </a>
           </h2>
           <ul>
-            <li>Modern web standards => Angular/React/Vue/Js</li>
-            <li>Runs in a browser</li>
-            <li>Small files: 6.12 MB (iconic) vs 47 MB (RN)</li>
-            <li>Capacitor instead of Cordova</li>
+            <li class="fragment">
+              Modern web standards: Web Components for the win
+            </li>
+            <li class="fragment">=> Angular / React / Vue / Js</li>
+            <li class="fragment">Runs in a browser</li>
+            <li class="fragment">
+              Small files: 6.12 MB (iconic) vs 47 MB (RN)
+            </li>
+            <li class="fragment">Capacitor instead of Cordova</li>
           </ul>
         </section>
 
         <section>
-          <table>
-            <thead>
-              <tr>
-                <th></th>
-                <th>Native</th>
-                <th>Hybrid-Native</th>
-                <th>Hybrid-Web</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><b>Examples</b></td>
-                <td>iOS and Android SDKs</td>
-                <td>React Native, Xamarin, NativeScript, Flutter</td>
-                <td>Ionic</td>
-              </tr>
-              <tr>
-                <td><b>Languages</b></td>
-                <td>Obj-C, Swift, Java</td>
-                <td>JS + Custom UI Language / Interpreter</td>
-                <td>HTML + CSS + JS</td>
-              </tr>
-              <tr>
-                <td><b>Code Reuse</b></td>
-                <td>Totally Separate Code Bases per Platform</td>
-                <td>Shared Business Logic with Different UI Codebases</td>
-                <td>One codebase, UI codebase stays the same</td>
-              </tr>
-              <tr>
-                <td><b>Target Platforms</b></td>
-                <td>iOS &amp; Android Native Mobile Apps</td>
-                <td>iOS &amp; Android Native Mobile Apps</td>
-                <td>
-                  iOS, Android, Electron, Mobile and Desktop Browsers as a
-                  Progressive Web App, and anywhere else the web runs
-                </td>
-              </tr>
-              <tr>
-                <td><b>Investment</b></td>
-                <td>Largest investment in staff and time</td>
-                <td>Medium investment in staff and time</td>
-                <td>Lowest investment in staff and time</td>
-              </tr>
-              <tr>
-                <td><b>UI Elements</b></td>
-                <td>Native UI independent to each platform</td>
-                <td>
-                  A selection of Native UI elements for iOS and Android UI
-                  elements are specific to the target platform and not shared<br />
-                  <br />
-                  Custom UI elements begin to require split UI code bases
-                </td>
-                <td>
-                  Web UI elements that are shared across any platform,
-                  conforming to the native look &amp; feel of wherever they are
-                  deployed<br />
-                  <br />
-                  Easily use completely custom UI elements
-                </td>
-              </tr>
-              <tr>
-                <td><b>API Access / Native Features</b></td>
-                <td>Separate Native API &amp; Codebases for each App</td>
-                <td>
-                  Abstracted Single-Codebase Native Access through Plugins (with
-                  ability to write custom Plugins)
-                </td>
-                <td>
-                  Abstracted Single-Codebase Native Access through Plugins (with
-                  ability to write custom Plugins)
-                </td>
-              </tr>
-              <tr>
-                <td><b>Offline Access</b></td>
-                <td>Works</td>
-                <td>Works</td>
-                <td>Works</td>
-              </tr>
-              <tr>
-                <td><b>Performance</b></td>
-                <td>“Native Performance” with well written code.</td>
-                <td>
-                  Indistinguishable difference on modern devices with well
-                  written code. See above.
-                </td>
-                <td>
-                  Indistinguishable difference on modern devices with well
-                  written code. See above.
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <h3>Getting started with ionic4 + React</h3>
+          <pre><code class="hljs bash">
+npm install ionic -g
+ionic start ionicApp --type=react
+ionic serve --devapp
+                </code></pre>
         </section>
 
         <section>
-          <script type="text/javascript">
-            trends.embed.renderExploreWidget(
-              "TIMESERIES",
-              {
-                comparisonItem: [
-                  { keyword: "/g/1q6l_n0n0", geo: "US", time: "today 12-m" },
-                  { keyword: "ReactNative", geo: "US", time: "today 12-m" }
-                ],
-                category: 0,
-                property: ""
-              },
-              {
-                exploreQuery:
-                  "geo=US&q=%2Fg%2F1q6l_n0n0,ReactNative&date=today 12-m,today 12-m",
-                guestPath: "https://trends.google.com:443/trends/embed/"
-              }
-            );
-          </script>
+          <section>
+            <h3>What's likely to be next?</h3>
+          </section>
+
+          <section>
+            <script type="text/javascript">
+              trends.embed.renderExploreWidget(
+                "TIMESERIES",
+                {
+                  comparisonItem: [
+                    { keyword: "/m/012l1vxv", geo: "US", time: "today 12-m" },
+                    { keyword: "/g/11c6w0ddw9", geo: "US", time: "today 12-m" },
+                    { keyword: "Vue", geo: "US", time: "today 12-m" }
+                  ],
+                  category: 0,
+                  property: ""
+                },
+                {
+                  exploreQuery:
+                    "date=today%2012-m,today%2012-m,today%2012-m&geo=US,US,US&q=%2Fm%2F012l1vxv,%2Fg%2F11c6w0ddw9,Vue",
+                  guestPath: "https://trends.google.com:443/trends/embed/"
+                }
+              );
+            </script>
+          </section>
+
+          <section>
+            <script type="text/javascript">
+              trends.embed.renderExploreWidget(
+                "TIMESERIES",
+                {
+                  comparisonItem: [
+                    { keyword: "/g/1q6l_n0n0", geo: "US", time: "today 12-m" },
+                    { keyword: "ReactNative", geo: "US", time: "today 12-m" }
+                  ],
+                  category: 0,
+                  property: ""
+                },
+                {
+                  exploreQuery:
+                    "geo=US&q=%2Fg%2F1q6l_n0n0,ReactNative&date=today 12-m,today 12-m",
+                  guestPath: "https://trends.google.com:443/trends/embed/"
+                }
+              );
+            </script>
+          </section>
         </section>
 
         <section>
-          <script type="text/javascript">
-            trends.embed.renderExploreWidget(
-              "TIMESERIES",
-              {
-                comparisonItem: [
-                  { keyword: "/m/012l1vxv", geo: "US", time: "today 12-m" },
-                  { keyword: "/g/1q6l_n0n0", geo: "US", time: "today 12-m" },
-                  { keyword: "/g/11c6w0ddw9", geo: "US", time: "today 12-m" },
-                  { keyword: "ReactNative", geo: "US", time: "today 12-m" },
-                  { keyword: "Vue", geo: "US", time: "today 12-m" }
-                ],
-                category: 0,
-                property: ""
-              },
-              {
-                exploreQuery:
-                  "geo=US&q=%2Fm%2F012l1vxv,%2Fg%2F1q6l_n0n0,%2Fg%2F11c6w0ddw9,ReactNative,Vue&date=today 12-m,today 12-m,today 12-m,today 12-m,today 12-m",
-                guestPath: "https://trends.google.com:443/trends/embed/"
-              }
-            );
-          </script>
+          <h3>Me :)</h3>
+
+          <img src="images/umuzi.jpg" /><br />
+          CTO
+          <a href="https://umuzi.org">
+            Umuzi
+          </a>
+          -
+          <a href="mailto:sheena.oconnell@umuzi.org">
+            sheena.oconnell@umuzi.org </a
+          ><br />
+          (We are hiring - get in touch)
+        </section>
+
+        <section>
+          <h2>&lt/ Presentation ></h2>
         </section>
 
         <section>
