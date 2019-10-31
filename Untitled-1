@@ -1,0 +1,30 @@
+expo has its own storage goodies
+- securestore
+- expo-sqlite
+- async-storage 
+
+otherwise
+
+
+ionic4 works with any js framework, including react
+
+RN:
+- hybrid native 
+- React Native, along with Xamarin and NativeScript, allows you to program your user interfaces (UI) in one language that then orchestrates native UI controls at runtime.
+
+React Native component that renders text on a mobile app will be translated into two separate components: [TextView] for Android and [UIView] for iOS
+
+JS code orchistrates native code through predefined interfaces. Anything Native is possible, but some stuff is pretty hard and requires actual native code to be written
+
+
+
+
+Ionic: 
+- hybrid web
+- webview
+- works well with electron
+- complete control over ui looks
+    - design consistency
+- Modern web standards
+    - can run as a pwa easily 
+    - whatever you write today will keep working

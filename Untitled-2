@@ -1,0 +1,38 @@
+ionic login
+ionic serve --devapp 
+ionic build
+
+ionic capacitor add android
+npx cap copy android
+npx cap open android
+
+
+
+ionic with React seems to do everything that ReactNative does but:
+Size:
+6.12 versus 47Mb
+easy to debug
+easier to share code
+JIT compilation works in ios and android (instead of just android) 
+just run ionic in a browser so you can debug easily with familiar tools
+
+
+Can't use Cordova with React
+
+
+ Ionic and React Native as two of the most common alternative
+
+
+ React shop, choose React Native; if you’re an Angular shop, choose Ionic 
+
+ build a real native UI using mostly JavaScript
+
+ Ionic gui elements=> suuuuper portable.
+ - web
+ - pwa
+ - electron
+ - android and apple
+
+ open web standards supported in all modern browser
+
+ lose to the metal with Native SDKs
